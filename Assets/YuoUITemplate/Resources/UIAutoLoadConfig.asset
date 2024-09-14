@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ab4d2a671c14300a313802d4ec2d486, type: 3}
+  m_Name: UIAutoLoadConfig
+  m_EditorClassIdentifier: 
+  autoLoadList: []
+  linkDirList:
+  - {fileID: 1173616990241642680, guid: b13655fdc16035f43ac8655faeac42e8, type: 3}
+  - {fileID: 9099228062559779861, guid: 60394bee1ad992343b9fd7c4a80de74b, type: 3}
+  linkDir:
+  - Assets/YuoUITemplate/Resources/Prefabs/UI
