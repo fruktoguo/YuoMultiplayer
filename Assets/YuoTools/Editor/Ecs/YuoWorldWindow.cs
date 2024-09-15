@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
@@ -359,7 +361,7 @@ namespace YuoTools.Editor.Ecs
             [HideInInspector] public YuoEntity Entity;
 
             private static YuoEntity _currentEntity;
-            
+
             private GameObject _gameObject;
 
             [OnInspectorGUI]
@@ -375,7 +377,7 @@ namespace YuoTools.Editor.Ecs
                     {
                         // 将当前选中的GameObject设置为select.SelectGameObject
                         Selection.activeGameObject = select.SelectGameObject;
-                        
+
                         _gameObject = select.SelectGameObject;
                     }
                 }
@@ -383,13 +385,15 @@ namespace YuoTools.Editor.Ecs
 
             private Color ElementColor(int index)
             {
-                return HashCodeToColor(Components[index].Type.Name.GetHashCode());
+                return HashCodeToColor(Components[index].Type.Name);
             }
 
-            private Color HashCodeToColor(int hashCode)
+            private Color HashCodeToColor(string input)
             {
-                float h = Math.Abs(hashCode / 1.3f % 1f);
-                return Color.HSVToRGB(h, 0.6f, 0.55f);
+                using MD5 md5 = MD5.Create();
+                byte[] hashBytes = md5.ComputeHash(Encoding.UTF8.GetBytes(input));
+                float h = Math.Abs(hashBytes[0] / 1.3f % 1f);
+                return Color.HSVToRGB(h, 0.35f, 0.55f);
             }
 
             int _count;

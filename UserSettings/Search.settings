@@ -9,6 +9,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.66F56946" = "t:TextMeshProUGUI Placeholder"
+	"OpenInspectorPreview.66F56946" = "1"
+	"currentGroup.66F56946" = "scene"
 }
 providers = {
 	asset = {
@@ -65,6 +68,8 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"t:TextMeshProUGUI Placeholder"
+	"t:TextMeshProUGUI"
 ]
 searchItemFavorites = [
 ]

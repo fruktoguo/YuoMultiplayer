@@ -208,6 +208,7 @@ namespace YuoTools.UI
             if (component.ModuleUI)
             {
                 component.Entity.AddComponent<TopViewComponent>();
+                moduleUiItems.Add(component);
             }
 
             return component;

@@ -106,15 +106,15 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_fontColor.r
-    value: 0.05
+    value: 0.19607843
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_fontColor.g
-    value: 0.05
+    value: 0.19607843
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_fontColor.b
-    value: 0.05
+    value: 0.19607843
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_fontColor.a
@@ -254,7 +254,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_VerticalAlignment
-    value: 512
+    value: 4096
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_textAlignment
@@ -285,8 +285,8 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
-    propertyPath: m_enableWordWrapping
-    value: 1
+    propertyPath: m_TextWrappingMode
+    value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_wordWrappingRatios
@@ -309,6 +309,14 @@ Preset:
     value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
+    propertyPath: m_ActiveFontFeatures.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
     propertyPath: m_enableExtraPadding
     value: 0
     objectReference: {fileID: 0}
@@ -318,6 +326,10 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_isRichText
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EmojiFallbackSupport
     value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
@@ -413,3 +425,8 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   m_ExcludedProperties: []
+  m_CoupledType:
+    m_NativeTypeID: 0
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_CoupledProperties: []

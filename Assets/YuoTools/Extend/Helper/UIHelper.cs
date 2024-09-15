@@ -25,6 +25,16 @@ namespace YuoTools.Extend.Helper
             btn.onClick.AddListener(() => UIManagerComponent.Get.Close(windowName));
         }
 
+        public static void SetUICloseAndOpen(this Button btn, string windowName, string openWindowName)
+        {
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(() =>
+            {
+                UIManagerComponent.Get.Close(windowName);
+                UIManagerComponent.Get.Open(openWindowName);
+            });
+        }
+
         public static void SetUICloseWaitAnima(this Button btn, string windowName)
         {
             btn.onClick.RemoveAllListeners();
