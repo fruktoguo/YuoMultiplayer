@@ -54,7 +54,7 @@ namespace YuoTools.UI
                 }
 
                 // 创建房间
-                var lobbyQuery = await GameNetworkManager.Instance.StartHostAsync(maxPlayer);
+                var lobbyQuery = await YuoNetworkManager.Instance.StartHostAsync(maxPlayer);
                 if (!lobbyQuery.HasValue)
                 {
                     ShowInfo("创建房间失败，请重试。");

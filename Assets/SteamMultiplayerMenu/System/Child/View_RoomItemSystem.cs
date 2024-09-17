@@ -15,7 +15,7 @@ namespace YuoTools.UI
             if (lobby.HasValue && CanJoin())
             {
                 ReflexHelper.LogAll(lobby.Value.Owner);
-                GameNetworkManager.Instance.StartClient(lobby.Value.Owner.Id.Log());
+                YuoNetworkManager.Instance.StartClient(lobby.Value.Owner.Id.Log());
             }
         }
 

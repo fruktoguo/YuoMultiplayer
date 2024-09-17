@@ -31,7 +31,7 @@ namespace YuoTools.UI
 
         protected override async void Run(View_MultiplayerJoinRoomComponent view)
         {
-            var lobbies = await GameNetworkManager.Instance.FindLobbies();
+            var lobbies = await YuoNetworkManager.Instance.FindLobbies();
             view.RoomItems.DestroyAll();
             if (lobbies is { Length: > 0 })
             {
