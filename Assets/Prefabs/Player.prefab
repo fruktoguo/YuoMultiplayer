@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4613286004295610730}
   - component: {fileID: 2175920294930852653}
   - component: {fileID: 3967031722520096369}
+  - component: {fileID: 8056144307895388085}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -231,3 +232,30 @@ MonoBehaviour:
   UseRigidBodyForMotion: 0
   AutoUpdateKinematicState: 1
   AutoSetKinematicOnDespawn: 1
+--- !u!114 &8056144307895388085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8007336235176686333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Graph: {fileID: 8961702311421102908, guid: ae67a21d32a97494cb40716385eae43f, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 4360042304986677523
+  NetcodeRunOnlyOnOwner: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4360042304986677523
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 8007336235176686333}

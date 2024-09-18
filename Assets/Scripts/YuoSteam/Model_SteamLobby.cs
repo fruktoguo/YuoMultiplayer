@@ -5,6 +5,7 @@ using Steamworks.Data;
 using Netcode.Transports.Facepunch;
 using Unity.Netcode;
 using UnityEngine;
+using YuoSteam;
 using YuoTools.Extend.Helper;
 
 public partial class YuoNetworkManager
@@ -249,7 +250,7 @@ public partial class YuoNetworkManager
         {
             try
             {
-                var lobby = await SteamMatchmaking.CreateLobbyAsync(maxPlayers);
+                var lobby = await SteamMatchmakingHelper.CreateLobbyAsync(maxPlayers);
                 if (lobby.HasValue)
                 {
                     // 设置大厅的过滤器数据
@@ -298,7 +299,7 @@ public partial class YuoNetworkManager
         /// <returns>符合条件的Steam大厅数组，如果没有则返回空数组</returns>
         private async Task<Lobby[]> GetLobbiesFilter()
         {
-            var lobbyQuery = SteamMatchmaking.LobbyList;
+            var lobbyQuery = SteamMatchmakingHelper.LobbyList;
 
             // 因为是测试ID480，所以会有很多其他开发人员的大厅，进行过滤
             lobbyQuery.WithKeyValue(nameof(LobbyTestFilter), LobbyTestFilter);
