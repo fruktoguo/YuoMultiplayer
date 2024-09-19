@@ -1,0 +1,18 @@
+{
+    "name": "SteamNetcode",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2aa43b0c797e0d444a7e82e75d4f2082",
+        "GUID:1491147abca9d7d4bb7105af628b223e",
+        "GUID:f429a0a378778da4abcfba0c403adddb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
