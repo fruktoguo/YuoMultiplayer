@@ -9,9 +9,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "t:TextMeshProUGUI Placeholder"
+	"last_search.66F56946" = "prefab:base"
 	"OpenInspectorPreview.66F56946" = "1"
-	"currentGroup.66F56946" = "scene"
+	"currentGroup.66F56946" = "all"
 }
 providers = {
 	asset = {
@@ -68,16 +68,18 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
-	"t:TextMeshProUGUI Placeholder"
+	"prefab:any"
+	"t:GameObject prefab:any"
+	"t:GameObject"
 	"t:TextMeshProUGUI"
+	"t:TextMeshProUGUI Placeholder"
 ]
 searchItemFavorites = [
 ]
 savedSearchesSortOrder = 0
 showSavedSearchPanel = false
 hideTabs = false
-expandedQueries = [
-]
+expandedQueries = [-1765347274 961552606]
 queryBuilder = true
 ignoredProperties = "id;name;classname;imagecontentshash"
 helperWidgetCurrentArea = "all"
