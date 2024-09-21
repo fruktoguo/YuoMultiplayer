@@ -63,7 +63,7 @@ public class PlayerInputBehavior : NetworkBehaviour
         // 发送移动和旋转数据的固定间隔
         if (inputMoveDirection.sqrMagnitude > 0 || Mathf.Abs(inputRotateAmount) > 0)
         {
-            SubmitMovementAndRotationServerRpc(inputMoveDirection, inputRotateAmount);
+            SubmitMovementAndRotation(inputMoveDirection, inputRotateAmount);
             // 重置输入缓冲区
             inputMoveDirection = Vector3.zero;
             inputRotateAmount = 0f;
@@ -161,8 +161,9 @@ public class PlayerInputBehavior : NetworkBehaviour
     /// </summary>
     /// <param name="move">移动向量（未缩放）</param>
     /// <param name="rotate">旋转量（未缩放）</param>
-    [ServerRpc(RequireOwnership = true)]
-    private void SubmitMovementAndRotationServerRpc(Vector3 move, float rotate)
+    // [ServerRpc(RequireOwnership = true)]
+    // private void SubmitMovementAndRotationServerRpc(Vector3 move, float rotate)
+    private void SubmitMovementAndRotation(Vector3 move, float rotate)
     {
         // 安全性验证：限制移动和旋转的最大值
         float maxMovePerFrame = moveSpeed * Time.fixedDeltaTime * 2; // 允许一定的缓冲
